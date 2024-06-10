@@ -363,11 +363,11 @@ export default function LandingPage() {
                 <div className='text-center md:text-left mb-10 md:mb-0'>
                     <h1 className='font-serif text-3xl md:text-5xl font-medium'>Trusted by over <span className='text-[#F2BE09]'>1 million</span> users</h1>
                 </div>
-                <div className='flex items-center'>
+                <div className='flex items-center justify-center md:flex-row'>
                     <img src={gradup} className='w-1/3 md:w-1/6' alt="Gradup Logo" />
-                    <div className='ml-4 font-serif'>
-                        <h1 className=' text-xl md:text-2xl'>Powered by</h1>
-                        <p className='text-2xl md:text-4xl font-bold'>Grad<span className='text-[#1C4980]'>Up</span></p>
+                                    <div className='ml-4 md:ml-8 lg:ml-12 font-serif'>
+                    <h1 className='text-xl md:text-2xl lg:text-3xl'>Powered by</h1>
+                    <p className='text-2xl md:text-3xl lg:text-4xl font-bold'>Grad<span className='text-[#1C4980]'>Up</span></p>
                     </div>
                 </div>
             </div>
