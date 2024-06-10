@@ -365,8 +365,8 @@ export default function LandingPage() {
                 </div>
                 <div className='flex items-center'>
                     <img src={gradup} className='w-1/3 md:w-1/6' alt="Gradup Logo" />
-                    <div className='ml-4'>
-                        <h1 className='font-serif text-xl md:text-2xl'>Powered by</h1>
+                    <div className='ml-4 font-serif'>
+                        <h1 className=' text-xl md:text-2xl'>Powered by</h1>
                         <p className='text-2xl md:text-4xl font-bold'>Grad<span className='text-[#1C4980]'>Up</span></p>
                     </div>
                 </div>
