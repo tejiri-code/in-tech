@@ -1,0 +1,37 @@
+.slick-prev, .slick-next {
+    font-size: 24px;
+    color: #393939;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -50px; /* Positioning below the slider */
+}
+
+.slick-prev {
+    left: calc(-5%);
+    color: #393939;
+    position: absolute;
+}
+
+.slick-next {
+    right: 0%;
+    color: #393939;
+    position: absolute;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    color: #F2BE09;
+}
+
+.custom-prev-arrow, .custom-next-arrow {
+    font-size: 24px;
+    color: #393939;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-prev-arrow:hover, .custom-next-arrow:hover {
+    color: #F2BE09;
+}
