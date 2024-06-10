@@ -226,23 +226,24 @@ export default function LandingPage() {
         <div className='overflow-x-hidden'>
             <Navbar />
 
-            <div className="flex px-16 py-32 bg-[#fff] h-screen">
-                <div className="block pt-20">
-                    <div className="text-6xl font-normal text-[#393939] font-serif">
+            <div className="flex flex-col md:flex-row px-4 md:px-16 py-8 md:py-32 bg-[#fff] h-screen">
+                <div className="md:w-1/2 md:pt-20">
+                    <div className="text-4xl md:text-6xl font-normal text-[#393939] font-serif">
                         Secure, Seamless, <span className="text-[#F2BE09]">Smart<p className="pt-2">Finance</p></span>
                     </div>
-                    <div className="text-xl pt-5 font-light text-[#666666] font-sans">
+                    <div className="text-lg md:text-xl pt-3 md:pt-5 font-light text-[#666666] font-sans">
                         Facilitating Seamless Transactions for an Enhanced and<br /> Fortified Financial Future
                     </div>
-                    <div className="flex pt-5">
-                        <button className="px-4 bg-[#F2BE09] font-normal rounded-md text-[#fff] mr-5 py-2">Apply Now</button>
+                    <div className="flex pt-3 md:pt-5">
+                        <button className="px-4 bg-[#F2BE09] font-normal rounded-md text-[#fff] mr-3 md:mr-5 py-2">Apply Now</button>
                         <button className="px-4 text-[#666666] font-normal bg-[#fff] rounded-md border border-[#F2BE09] py-2">Download</button>
                     </div>
                 </div>
-                <div>
-                    <img src={cartoon} alt="cartoon" className="w-100 h-100" />
+                <div className="md:w-1/2 md:pl-8">
+                    <img src={cartoon} alt="cartoon" className="w-full h-auto" />
                 </div>
             </div>
+
 
             <div className="bg-[#FFFEFA] pb-24">
                 <h1 className="text-4xl text-[#393939] font-serif pt-20 font-semibold text-center">
@@ -251,29 +252,29 @@ export default function LandingPage() {
                 <p className="text-center font-light text-[#666666] py-5">
                     We ensure that you’ll embark on a perfectly planned,<br /> safe vacation at a price you can afford.
                 </p>
-                <div className="flex  gap-10 px-5 justify-center">
-                    <div className="flex flex-col border border-[#666666] border-opacity-10 rounded-lg bg-white p-8 mx-2">
+                <div className="flex flex-col md:flex-row gap-10 px-5 justify-center">
+                    <div className="flex flex-col border border-[#666666] border-opacity-10 rounded-lg bg-white p-8 mx-2 mb-5 md:mb-0">
                         <img src={manage} alt="manage" className="w-fit" />
                         <h1 className="text-2xl font-semibold text-[#393939] py-5">Manage your money</h1>
                         <p className="text-[#666666] text-sm font-light">
                             Completes all the work associated<br /> with planning and processing
                         </p>
                     </div>
-                    <div className="flex flex-col border border-[#666666] border-opacity-10 rounded-lg bg-white p-10 mx-2">
+                    <div className="flex flex-col border border-[#666666] border-opacity-10 rounded-lg bg-white p-10 mx-2 mb-5 md:mb-0">
                         <img src={insight} alt="insight" className="w-fit" />
                         <h1 className="text-2xl font-semibold text-[#393939] py-5">Insights of business</h1>
                         <p className="text-[#666666] text-sm font-light">
                             After successful access then book <br />from exclusive deals & pricing
                         </p>
                     </div>
-                    <div className="flex flex-col border border-[#666666] border-opacity-10 rounded-lg bg-white p-10 mx-2">
+                    <div className="flex flex-col border border-[#666666] border-opacity-10 rounded-lg bg-white p-10 mx-2 mb-5 md:mb-0">
                         <img src={easy} alt="easy" className="w-fit" />
                         <h1 className="text-2xl font-semibold text-[#393939] py-5">Easy Integration</h1>
                         <p className="text-[#666666] text-sm font-light">
                             Start and explore a wide range of <br />exciting travel experience.
                         </p>
                     </div>
-                    <div className="flex flex-col border border-[#666666] border-opacity-10 rounded-lg bg-white p-10 mx-2">
+                    <div className="flex flex-col border border-[#666666] border-opacity-10 rounded-lg bg-white p-10 mx-2 mb-5 md:mb-0">
                         <img src={flexible} alt="flexible" className="w-fit" />
                         <h1 className="text-2xl font-semibold text-[#393939] py-5">Flexibility in payments</h1>
                         <p className="text-[#666666] text-sm font-light">
@@ -283,71 +284,73 @@ export default function LandingPage() {
                 </div>
             </div>
 
-            <div>
+
+            <div className=" py-20 md:py-32">
                 <div className="flex justify-center">
-                    <div className="flex flex-col py-20">
-                        <h1 className="text-4xl text-[#F2BE09] font-serif font-semibold">
+                    <div className="flex flex-col px-5 md:px-0">
+                        <h1 className="text-4xl text-[#F2BE09] font-serif font-semibold text-center">
                             Empowering Businesses<span className="text-[#393939]"> all over Nigeria</span>
                         </h1>
                         <p className="text-[#666666] font-light text-center py-5">
                             We ensure that you’ll embark on a perfectly planned,<br /> safe vacation at a price you can afford.
                         </p>
-                        <div className="flex justify-center gap-10">
-                            <div className="items-center justify-center mx-auto block text-center">
+                        <div className="flex flex-col md:flex-row justify-center md:justify-between gap-5 md:gap-10">
+                            <div className="text-center">
                                 <h1 className="text-4xl font-medium font-serif text-[#393939] pb-1 pt-5">2500+</h1>
                                 <hr className="w-16 h-0.5 mx-auto bg-[#F2BE09]" />
-                                <p className="text-[#666666] font-light pt-1 text-center">Loans Disbursed</p>
+                                <p className="text-[#666666] font-light pt-1">Loans Disbursed</p>
                             </div>
-                            <div className="items-center justify-center mx-auto block text-center">
+                            <div className="text-center">
                                 <h1 className="text-4xl font-medium font-serif text-[#393939] pb-1 pt-5">4000+</h1>
                                 <hr className="w-16 h-0.5 mx-auto bg-[#F2BE09]" />
-                                <p className="text-[#666666] font-light pt-1 text-center">Pincodes</p>
+                                <p className="text-[#666666] font-light pt-1">Pincodes</p>
                             </div>
-                            <div className="items-center justify-center mx-auto block text-center">
+                            <div className="text-center">
                                 <h1 className="text-4xl font-medium font-serif text-[#393939] pb-1 pt-5">9000+</h1>
                                 <hr className="w-16 h-0.5 mx-auto bg-[#F2BE09]" />
-                                <p className="text-[#666666] font-light pt-1 text-center">Amount Disbursed</p>
+                                <p className="text-[#666666] font-light pt-1">Amount Disbursed</p>
                             </div>
-                            <div className="items-center justify-center mx-auto block text-center">
+                            <div className="text-center">
                                 <h1 className="text-4xl font-medium font-serif text-[#393939] pb-1 pt-5">1500+</h1>
                                 <hr className="w-16 h-0.5 mx-auto bg-[#F2BE09]" />
-                                <p className="text-[#666666] font-light pt-1 text-center">Cities & Towns</p>
+                                <p className="text-[#666666] font-light pt-1">Cities & Towns</p>
                             </div>
-
                         </div>
-                        <button className="px-4 bg-[#F2BE09] font-normal rounded-md text-[#fff] mr-5 mt-6 py-2 ">Apply Now</button>
+                        <button className="px-4 bg-[#F2BE09] font-normal rounded-md text-[#fff] mt-6 md:mt-8 py-2 w-full md:w-auto">Apply Now</button>
                     </div>
                 </div>
             </div>
 
-            <div className="bg-[#FFFEFA] text-[#fff] py-5">
-                <h1 className="text-4xl text-[#393939] font-serif pt-20 font-semibold text-center">Customized solution for<span className="text-[#F2BE09]">  businesses</span></h1>
+
+            <div className="bg-[#FFFEFA] text-[#fff] py-10 md:py-20">
+                <h1 className="text-4xl text-[#393939] font-serif font-semibold text-center md:pt-20">Customized solution for<span className="text-[#F2BE09]"> businesses</span></h1>
                 <p className="text-center font-light text-[#666666] py-5">We ensure that you’ll embark on a perfectly planned,<br /> safe vacation at a price you can afford. </p>
-                <div className="flex gap-10 px-10 justify-center">
-                    <div className="flex flex-col  rounded-lg  p-10 text-center ">
+                <div className="flex flex-col md:flex-row gap-10 px-5 md:px-10 justify-center">
+                    <div className="flex flex-col rounded-lg p-10 text-center">
                         <img src={pgateway} alt="manage" className="w-fit" />
                         <h1 className="text-2xl font-serif font-semibold text-[#393939] pt-5 pb-2">Payment Gateway</h1>
-                        <hr className="w-16 h-0.5  mx-auto bg-[#F2BE09] " />
+                        <hr className="w-16 h-0.5 mx-auto bg-[#F2BE09]" />
                         <p className="text-[#666666] text-sm font-light pt-2">Completes all the work associated<br /> with planning and processing</p>
                     </div>
-                    <div className="flex flex-col  rounded-lg  p-10  text-center">
+                    <div className="flex flex-col rounded-lg p-10 text-center">
                         <img src={nopayment} alt="manage" className="w-fit" />
                         <h1 className="text-2xl font-serif font-semibold text-[#393939] pt-5 pb-2">No code payments</h1>
-                        <hr className="w-16 h-0.5  mx-auto bg-[#F2BE09] " />
+                        <hr className="w-16 h-0.5 mx-auto bg-[#F2BE09]" />
                         <p className="text-[#666666] text-sm font-light pt-2">Completes all the work associated<br /> with planning and processing</p>
                     </div>
                 </div>
             </div>
 
-            <div className=" pb-24">
-                <h1 className="text-4xl text-center  text-[#F2BE09] font-serif font-semibold">
+
+            <div className="pb-10 md:pb-24">
+                <h1 className="text-4xl text-center text-[#F2BE09] font-serif font-semibold">
                     What people<span className="text-[#393939]"> say about us</span>
                 </h1>
                 <p className="text-center font-light text-[#666666] py-5">
                     We ensure that you’ll embark on a perfectly planned,<br /> safe vacation at a price you can afford.
                 </p>
                 <div className="flex justify-center py-10">
-                    <Slider {...settings} className='w-4/5'>
+                    <Slider {...settings} className='w-full md:w-4/5'>
                         {testimonials.map((testimonial, index) => (
                             <TestimonialCard key={index} {...testimonial} />
                         ))}
@@ -355,27 +358,33 @@ export default function LandingPage() {
                 </div>
             </div>
 
-            <div className='bg-[#FFFEFA] flex items-center justify-between py-32 px-24'>
-                <div>
-                    <h1 className='font-serif text-5xl font-medium'>Trusted by over <span className='text-[#F2BE09]'> 1 million </span>users</h1>
+
+            <div className='bg-[#FFFEFA] flex flex-col md:flex-row items-center justify-between py-16 md:py-32 px-6 md:px-24'>
+                <div className='text-center md:text-left mb-10 md:mb-0'>
+                    <h1 className='font-serif text-3xl md:text-5xl font-medium'>Trusted by over <span className='text-[#F2BE09]'>1 million</span> users</h1>
                 </div>
                 <div className='flex items-center'>
-                    <img src={gradup} className='w-1/6' />
-                    <h1 className='font-serif'>Powered by <p className='text-4xl font-bold'>Grad<span className='text-[#1C4980]'>Up</span></p></h1>
+                    <img src={gradup} className='w-1/3 md:w-1/6' alt="Gradup Logo" />
+                    <div className='ml-4'>
+                        <h1 className='font-serif text-xl md:text-2xl'>Powered by</h1>
+                        <p className='text-2xl md:text-4xl font-bold'>Grad<span className='text-[#1C4980]'>Up</span></p>
+                    </div>
                 </div>
             </div>
 
-            <div >
-                <h1 className="text-4xl text-[#393939] font-serif pt-20 font-semibold text-center">Recent<span className="text-[#F2BE09]"> Blogs</span></h1>
-                <p className="text-center font-light text-[#666666] py-5">We ensure that you’ll embark on a perfectly planned,<br /> safe vacation at a price you can afford. </p>
-                <div className="flex justify-center py-10">
-                    <Slider {...blogsettings} className='w-full mx-auto px-16'>
+
+            <div className=''>
+                <h1 className="text-4xl md:text-5xl text-center text-[#393939] font-serif pt-20 font-semibold">Recent<span className="text-[#F2BE09]"> Blogs</span></h1>
+                <p className="text-center font-light text-[#666666] py-5">We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford.</p>
+                <div className="flex justify-center py-10 px-6 md:px-16">
+                    <Slider {...blogsettings} className='w-full'>
                         {blog.map((blog, index) => (
                             <BlogCard key={index} {...blog} />
                         ))}
                     </Slider>
                 </div>
             </div>
+
 
             <div className='py-10 bg-[#FFFEFA]'>
                 <h1 className='text-[#F2BE09] text-center font-bold text-4xl font-serif'>Begin a business journey <span className='text-[#393939]'>that<br /> transitions to new heights every day!</span></h1>
@@ -385,18 +394,18 @@ export default function LandingPage() {
                 </div>
             </div>
 
-            <div >
-
-                <div className="flex justify-center py-10  mx-auto px-16">
+            <div className='py-10 bg-[#FFFEFA]'>
+                <div className="flex flex-col md:flex-row justify-center mx-auto px-5 md:px-16">
                     {contact.map((card, index) => (
                         <ContactCard key={index} {...card} />
                     ))}
                 </div>
             </div>
 
+
             <footer id="contacts" className="bg-[#393939] text-white ">
-                <div className="container mx-auto justify-between flex  md:flex-row px-6 pt-24 pb-10 md:pt-24">
-                    <div className=' grid grid-cols-3  gap-20'>
+                <div className="container mx-auto px-6 py-10 md:py-24 md:flex md:flex-row md:justify-between">
+                    <div className='grid grid-cols-3 md:grid-cols-5 gap-10 md:gap-20'>
                         <div className=" ">
                             <h1 className="text-xl font-light font-serif mb-4">Accept Payments</h1>
                             <ul className="text-sm">
@@ -468,7 +477,7 @@ export default function LandingPage() {
                             </ul>
                         </div>
                     </div>
-                    <div className=" mb-6 md:mb-0 w-1/4 md:mr-8">
+                    <div className="md:w-1/4 md:mr-8">
                         <div className="text-2xl  flex pb-5 font-semibold">
                             <h1 className="font-extrabold">In Tech</h1>{" "}
                         </div>
@@ -481,7 +490,7 @@ export default function LandingPage() {
                 <hr className=' bg-white   w-5/6 justify-center m-auto  '></hr>
                 <div className='block lg:flex justify-between text-center mx-auto sm:mx-32 py-5'>
                     <h1 className=' font-light text-center'>Copyright, In Tech 2022. All rights reserved.</h1>
-                    <p className='flex gap-4'>
+                    <p className='flex items-center justify-center py-5 lg:py-0 gap-4'>
                         <FaFacebook className='w-10 h-8' />
                         <FaSquareInstagram className='w-10 h-8' />
                         <FaLinkedin className='w-10 h-8' />
